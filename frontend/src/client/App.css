@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.meals,
+.meal-details,
+.new-meal {
+  padding: 20px;
+  background-color: #dadf79;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 40px;
+}
+
+.meal-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-details section {
+  background-color: #bed7d8;
+  padding: 10px;
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.search-bar {
+  background-color: beige;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.search-bar:focus {
+  background-color: rgb(198, 224, 233);
+}
+
+.render-meals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.render-meals li {
+  margin-bottom: 5em;
+  padding: 10px;
+  background-color: #d4a0a7;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.meal-title {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.meal-image {
+  width: 20em;
+  height: 15em;
+}
+
+.important-message {
+  color: red;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea,
+select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: large;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  width: 63%; 
+  display: inline-block;
+}
+
+.react-datepicker__input-container .date-picker{
+  width: 40%;
+} 
+
+.review-form div {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 80%;
+}
+
+@media screen and (max-width: 1400px) {
+  .meal-details section {
+    padding: 10px;
+    width: 65%;
+  }
+  .render-meals {
+    justify-content: space-around;
+  }
+  .meal-title {
+    font-size: 1.2em;
+  }
+  .meal-image {
+    width: 20em;
+    height: 15em;
+  }
+  .search-bar {
+    width: 40%;
+  }
+  input,
+  textarea,
+  select {
+    width: 40%;
+  }
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container,
+  .react-datepicker__input-container input {
+    width: 63%;
+  }
+  .review-form div {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .meal-details section {
+    padding: 15px;
+    width: 85%;
+  }
+  .render-meals {
+    justify-content: space-between;
+  }
+  .meal-title {
+    font-size: 1em;
+  }
+  .meal-image {
+    width: 15em;
+    height: 10em;
+  }
+  .search-bar {
+    width: 90%;
+  }
+  input,
+  textarea,
+  select {
+    width: 60%;
+  }
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container,
+  .react-datepicker__input-container input {
+    width: 77%;
+  }
+  .review-form div {
+    margin-left: 20px;
+  }
+}

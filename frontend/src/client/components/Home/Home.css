@@ -1,0 +1,55 @@
+.home {
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-text {
+  background-color: rgba(192, 192, 192, 0.3);
+  color: #580e31;
+  padding: 40px;
+  width: 40%;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 1.45;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 1400px) {
+  .home {
+    width: 100%;
+    height: 100%;
+  }
+  .home-text {
+    padding: 40px;
+    width: 40%;
+    font-size: 2.4em;
+    line-height: 1.45;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home {
+    width: auto;
+    height: 100%;
+  }
+  .home-text {
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+}

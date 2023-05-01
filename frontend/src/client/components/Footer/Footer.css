@@ -1,0 +1,38 @@
+.footer {
+  background-color: #9776d3;
+  color: black;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > div {
+  width: 30%;
+}
+
+.footer span {
+  padding: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .footer span {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    padding: 10px;
+    font-size: 0.7em;
+  }
+  .footer span {
+    padding: 2px;
+  }
+}
